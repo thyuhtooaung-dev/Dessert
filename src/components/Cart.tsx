@@ -44,10 +44,7 @@ export default function Cart() {
               className="flex flex-col items-center py-8"
             >
               <div>
-                <img
-                  src="../../assets/images/illustration-empty-cart.svg"
-                  alt="Empty"
-                />
+                <img src="/images/illustration-empty-cart.svg" alt="Empty" />
               </div>
               <p className="text-rose-500 font-medium mt-4 text-center">
                 Your added items will appear here
@@ -124,7 +121,7 @@ export default function Cart() {
               <div className="space-y-6">
                 <div className="flex gap-2 justify-center items-center py-4 bg-stone-50 rounded-lg">
                   <img
-                    src="/assets/images/icon-carbon-neutral.svg"
+                    src="/images/icon-carbon-neutral.svg"
                     alt=""
                     aria-hidden="true"
                     className={"size-6"}

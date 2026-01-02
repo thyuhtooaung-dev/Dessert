@@ -21,10 +21,7 @@ export default function OrderConfirm({
     <section className="bg-white w-full max-w-xl max-h-[90vh] rounded-t-2xl lg:rounded-2xl p-6 overflow-y-auto scrollbar-none">
       <header className="flex flex-col py-4 gap-3">
         <div className="size-12">
-          <img
-            src="../../assets/images/icon-order-confirmed.svg"
-            alt="Order Confirmed"
-          />
+          <img src="/images/icon-order-confirmed.svg" alt="Order Confirmed" />
         </div>
         <h1 className={"text-4xl font-bold"}>
           Order <br></br>

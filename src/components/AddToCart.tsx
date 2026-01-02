@@ -16,7 +16,7 @@ export default function AddToCart({ count, setCount }: AddToCartProps) {
             className="group flex items-center justify-center gap-2 w-full bg-white border border-rose-400 rounded-3xl px-4 py-2.5 cursor-pointer shadow-sm"
           >
             <img
-              src="../../assets/images/icon-add-to-cart.svg"
+              src="/images/icon-add-to-cart.svg"
               alt="cart icon"
               className={"size-5"}
             />
