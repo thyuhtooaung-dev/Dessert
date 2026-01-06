@@ -6,7 +6,9 @@ require("dotenv/config");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.enableCors({
-        origin: ['http://127.0.0.1:5173', 'https://desserts-topaz.vercel.app/'],
+        origin: 'https://desserts-topaz.vercel.app',
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        credentials: true,
     });
     await app.listen(3000);
 }

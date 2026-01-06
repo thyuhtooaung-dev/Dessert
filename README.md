@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Dessert](https://github.com/thyuhtooaung-dev/Dessert)
-- Live Site URL: [Vercel](https://dessert-mocha.vercel.app/)
+- Live Site URL: [Vercel](https://desserts-topaz.vercel.app/)
 
 ## My process
 
