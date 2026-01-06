@@ -50,6 +50,8 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwindcss](https://tailwindcss.com/)
+- [NestJs](https://nestjs.com/)
+- [Supabase](https://supabase.com/)
 
 
 ### Continued Development
