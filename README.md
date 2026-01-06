@@ -29,9 +29,9 @@ Users should be able to:
 
 ### Screenshots
 
-| Desktop View                                     | Mobile View |
-|--------------------------------------------------|-------------|
-| ![Desktop Screenshot](./screenshots/desktop.png) | <img src="./screenshots/mobile-1.png" width="45%" /> <img src="./screenshots/mobile-2.png" width="45%" /> |
+| Desktop View                                     | Mobile View                                                                                                         |
+|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| ![Desktop Screenshot](client/screenshots/desktop.png) | <img src="client/screenshots/mobile-1.png" width="45%" /> <img src="client/screenshots/mobile-2.png" width="45%" /> |
 
 
 ### Links
