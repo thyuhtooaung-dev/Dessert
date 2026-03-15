@@ -1,71 +1,53 @@
-# Frontend Mentor - Product list with cart solution
+# Desserts
 
-This is a solution to the [Product list with cart challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+A full-stack asynchronous ordering platform featuring real-time cart synchronization, complex state management, and a persistent headless backend. This project demonstrates advanced UI interaction patterns, modal orchestration, and seamless data flow between a React frontend and a NestJS/Supabase infrastructure.
 
-## Table of contents
+[Live Site URL](https://desserts-topaz.vercel.app/) | [Source Code](https://github.com/thyuhtooaung-dev/Dessert)
 
-- [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-- [My process](#my-process)
-    - [Built with](#built-with)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
-- [Author](#author)
+## System Architecture
 
-## Overview
+### Frontend
 
-### The challenge
+* **React & Tailwind CSS**: Implements a mobile-first, utility-driven UI with a focus on high-fidelity interactive elements and fluid layout transitions.
+* **Framer Motion**: Orchestrates complex layout animations, specifically for cart entry/exit transitions and the order confirmation modal reveals.
+* **State Management**: Centralized logic for handling multi-item cart operations, including incremental quantity adjustments and global total calculations.
 
-Users should be able to:
+### Backend
 
-- Add items to the cart and remove them
-- Increase/decrease the number of items in the cart
-- See an order confirmation modal when they click "Confirm Order"
-- Reset their selections when they click "Start New Order"
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+* **NestJS**: A modular architecture serving as the API layer to manage product catalogs and validate order structures.
+* **Supabase (PostgreSQL)**: Leveraging Row Level Security (RLS) and a relational schema to ensure high-performance data retrieval for the product suite.
 
-### Screenshots
+---
 
-| Desktop View                                     | Mobile View                                                                                                         |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| ![Desktop Screenshot](client/screenshots/desktop.png) | <img src="client/screenshots/mobile-1.png" width="45%" /> <img src="client/screenshots/mobile-2.png" width="45%" /> |
+## Core Engineering Features
 
+### Advanced Cart Orchestration
 
-### Links
+* **Granular Quantity Control**: A specialized UI component logic that toggles between "Add to Cart" and an active increment/decrement state, ensuring a frictionless UX.
+* **Real-Time Validation**: Instantaneous calculation of order totals and per-item pricing using a centralized state derived from the primary product data.
+* **State Persistence**: Engineered to maintain selection integrity across different viewports and interaction states.
 
-- Solution URL: [Dessert](https://github.com/thyuhtooaung-dev/Dessert)
-- Live Site URL: [Vercel](https://desserts-topaz.vercel.app/)
+### Dynamic Order Lifecycle
 
-## My process
+* **Confirmation Modal Workflow**: A multi-step transition from cart review to a finalized "Order Confirmed" state, featuring a summary of purchased items and total expenditure.
+* **Session Reset Logic**: Integrated "Start New Order" functionality that performs a clean sweep of the application state and UI transitions without requiring a page reload.
 
-### Built with
+### Responsive Design & Interaction
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Tailwindcss](https://tailwindcss.com/)
-- [NestJs](https://nestjs.com/)
-- [Supabase](https://supabase.com/)
+* **Adaptive Grid Layouts**: Utilizes CSS Grid to transition from a single-column mobile view to a dense multi-column desktop catalog while maintaining visual hierarchy.
+* **Interactive State Feedback**: Custom-built hover and focus states for all interactive primitives, ensuring the platform meets modern accessibility and usability standards.
 
+---
 
-### Continued Development
-This is an ongoing project, and there’s plenty of room for improvement. I’ll continue refining the design, logic, and overall user experience over time.
+## Performance Previews
+| Desktop View | Mobile View |
+| :--- | :--- |
+| ![Desktop Screenshot](./client/screenshots/desktop.png) | ![Mobile Screenshot](./client/screenshots/mobile-2.png) |
 
-You’re welcome to contribute freely open an issue, propose changes, or submit a pull request if you’d like to help improve the project.
-
-
-### Useful Resources
-
-- [Framer Motion Documentation](https://www.framer.com/motion/) – This was my first time working with Framer Motion, and the official documentation made it much easier to grasp animations, layout transitions, and component motion.
+---
 
 ## Author
 
-- Github - [Thyu Htoo Aung](https://github.com/thyuhtooaung-dev)
-- Frontend Mentor - [@PoungMont](https://www.frontendmentor.io/profile/thyuhtooaung-dev)
-- X - [@PoungMont](https://x.com/Poung_Mont)
+**Thyu Htoo Aung** [GitHub](https://github.com/thyuhtooaung-dev) | [Frontend Mentor](https://www.frontendmentor.io/profile/thyuhtooaung-dev) | [X / Twitter](https://x.com/Poung_Mont)
+
+---
